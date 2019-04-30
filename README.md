@@ -6,3 +6,9 @@ To enable the zsh configuration for a single user:
 
 To enable the zsh configuration globally: 
  - sudo mv -v /etc/zshrc /etc/zshrc.bak && sudo cp -v /etc/skel/.zsh-extras /etc/zshrc 
+ 
+ Project Refences:
+ - https://github.com/zsh-users/zsh-autosuggestions
+ - https://github.com/zsh-users/zsh-history-substring-search
+ - https://github.com/zsh-users/zsh-syntax-highlighting
+ 
