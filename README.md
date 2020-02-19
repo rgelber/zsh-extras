@@ -5,10 +5,10 @@ Install zsh-extras:
  - sudo yum install https://github.com/rgelber/zsh-extras/raw/master/RPMS/noarch/zsh-extras-1-0.noarch.rpm
 
 To enable the zsh configuration for a single user:
- - sudo cp -vf /etc/skel/.zsh-extras /home/$(whoami)/
+ - sudo cp -vf /etc/skel/.zshrc-extras /home/$(whoami)/
 
 To enable the zsh configuration globally: 
- - sudo cp -vf /etc/skel/.zsh-extras /etc/zshrc 
+ - sudo cp -vf /etc/skel/.zshrc-extras /etc/zshrc 
  
 To restore the global configuration: 
  - sudo cp -vf /etc/skel/.zshrc /etc/zshrc
