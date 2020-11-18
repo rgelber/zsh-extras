@@ -1,5 +1,5 @@
 # zsh-extras
-This is a project to add zsh-autosuggestions, zsh-history-substring-search and zsh-syntax-highlighting. This package build is a noarch RPM build that has been tested on CentOS 6, 7, and 8. The idea was to take all of my favorite zsh plugins from github and build a manageable way to deploy it at a global and local level.
+This is a project to add zsh-autosuggestions, zsh-history-substring-search zsh-syntax-highlighting and fuzzy search functionality. This package build is a x86_64 RPM build that has been tested on CentOS 6, 7, and 8. The idea was to take all of my favorite zsh plugins from github and build a manageable way to deploy it at a global and local level.
 
 Install zsh-extras:
  - sudo yum install https://github.com/rgelber/zsh-extras/raw/master/RPMS/noarch/zsh-extras-1-1.x86_64.rpm
