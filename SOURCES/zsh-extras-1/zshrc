@@ -155,7 +155,13 @@ export LESS=-r
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # Use history substring search
 source /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
+# Expand zsh completions
+source /usr/share/zsh/plugins/zsh-completions/zsh-completions.plugin.zsh
 # bind UP and DOWN arrow keys to history substring search
+#
+# Load Fuzzy Functions
+source /usr/share/zsh/plugins/fzf/.fzf.zsh 
+
 zmodload zsh/terminfo
 bindkey "$terminfo[kcuu1]" history-substring-search-up
 bindkey "$terminfo[kcud1]" history-substring-search-down
