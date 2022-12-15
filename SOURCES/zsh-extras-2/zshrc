@@ -1,0 +1,29 @@
+# Use powerline
+USE_POWERLINE="true"
+
+# Use custom Prompts
+# -----------------------------------------
+# Prompts can be found in /usr/share/zsh/ 
+# and have a -promt appended to the config.
+PROMPT_THEME="zsh-maia-prompt"
+
+# Source redhat-zsh-configuration
+if [[ -e /usr/share/zsh/redhat-zsh-config ]]; then
+  source /usr/share/zsh/redhat-zsh-config
+fi
+
+# Use selected zsh prompt or default to redhat-zsh-prompt
+if [[ -e /usr/share/zsh/${PROMPT_THEME} ]]; then
+  source /usr/share/zsh/${PROMPT_THEME}
+else
+  source /usr/share/zsh/redhat-zsh-prompt
+fi
+
+# Add extended custom functionality
+if [[ -e /usr/share/zsh/configs ]]; then
+  for file in /usr/share/zsh/configs/* ; do
+    if [ -f "$file" ] ; then
+      source "$file"
+    fi
+  done
+fi

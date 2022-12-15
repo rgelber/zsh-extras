@@ -1,0 +1,3 @@
+# Custom Environment Variables
+EDITOR='vim'
+VISUAL='vim'

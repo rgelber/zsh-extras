@@ -1,0 +1,3 @@
+## Custom alias section 
+alias gitur='msg=$(curl -sk http://whatthecommit.com/index.txt); git add -A && git commit -m "$msg" && git push' # Random git commit messages.
+alias mem='ps -eo pmem,pid,user,args --sort -rss | head -n 20'                                                   # Show highest memory processes

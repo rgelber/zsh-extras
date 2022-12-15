@@ -1,0 +1,8 @@
+# Custom Functions
+function backup {
+    backuptime="$(date +%F)"
+    for i in $@; do
+        tar -czf ${i}-${backuptime}.tar.gz ${i}
+        echo -e "${i} => ${i}-${backuptime}.tar.gz"
+    done
+}
